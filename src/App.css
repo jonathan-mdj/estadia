@@ -1,0 +1,226 @@
+/* Alinear todos los elementos al centro */
+.App {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Alinear verticalmente al centro */
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #02253E; /* Cambiar color de fondo */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinear todo el contenido del header al centro */
+  width: 100%;
+  color: white; /* Cambiar el color del texto a blanco */
+}
+
+.App-header h1 {
+  margin-bottom: 10px; /* Espacio debajo del título */
+  text-align: center; /* Centrar el título */
+}
+
+.title-underline {
+  width: 90%; /* Ocupará el 90% del ancho de la pantalla */
+  height: 2px; /* Altura de la línea */
+  background-color: #ffffff; /* Color de la línea */
+  margin: 0 auto 20px auto; /* Centrar la línea y agregar espacio debajo */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar contenido dentro del contenedor */
+  align-items: center; /* Centrar el formulario */
+  gap: 20px;
+  width: 100%; /* Ajustar ancho al 100% */
+  max-width: 400px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.form-container.open {
+  max-height: 500px; /* Ajusta según el tamaño del formulario */
+}
+
+form {
+  background-color: #030506; /* Cambiar el color del fondo del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center; /* Centrar el contenido del formulario */
+  box-sizing: border-box;
+  color: white; /* Cambiar el color del texto del formulario a blanco */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 1rem;
+  color: white; /* Cambiar el color de las etiquetas a blanco */
+  text-align: left; /* Mantener las etiquetas alineadas a la izquierda */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.custom-btn {
+  width: auto;
+  padding: 10px;
+  background-color: #3D7195;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center; /* Centrar el botón */
+}
+
+.custom-btn:hover {
+  background-color: #599453;
+}
+
+.google-box {
+  background-color: #1c272b; /* Cambiar el fondo del recuadro de Google */
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Ajustar a 100% para ocupar el máximo espacio */
+  max-width: 300px; /* Limitar el ancho máximo */
+  text-align: center; /* Centrar el texto */
+  margin: 20px auto; /* Centrar el recuadro horizontalmente y añadir espacio arriba */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Alinear el contenido internamente al centro */
+  color: white; /* Cambiar color de las letras a blanco */
+}
+
+.google-box h2 {
+  font-size: 1.25rem;
+  color: white; /* Cambiar color del texto a blanco */
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  width: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white; /* Cambiar color del texto general a blanco */
+  background-color: #02253E; /* Cambiar el fondo de la pantalla */
+}
+
+.toggle-btn {
+  background-color: #0b5db4;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: center; /* Centrar el botón */
+}
+
+.toggle-btn:hover {
+  background-color: #288c1f;
+}
+
+.table-container {
+  display: flex;
+  justify-content: flex-start; /* Alinear la tabla a la izquierda */
+  width: 100%; /* Ocupar todo el ancho disponible */
+  max-width: 600px; /* Opcional: limitar el ancho máximo */
+  margin-top: 20px; /* Espacio arriba de la tabla */
+}
+
+.table-left {
+  width: 100%; /* Ocupar todo el ancho dentro del contenedor */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.table {
+  background-color: #f9f9f9; /* Fondo blanco */
+  border-collapse: collapse; /* Eliminar espacios entre bordes */
+}
+
+.table th, .table td {
+  padding: 10px; /* Espaciado interno */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.table th {
+  background-color: #3D7195; /* Color del encabezado */
+  color: white; /* Texto blanco para el encabezado */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e0e0e0; /* Color de fondo para filas pares */
+}
+
+.table tbody tr:hover {
+  background-color: #d1d1d1; /* Color al pasar el mouse */
+}
+
+.alert {
+  position: absolute;
+  top: 20px; /* Ajusta según sea necesario */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrar */
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff; /* Verde para el mensaje de éxito */ 
+  z-index: 1000;
+  opacity: 1; /* Totalmente visible al inicio */
+  transition: opacity 0.5s ease; /* Efecto de transición para la opacidad */
+}
+
+.fade-out {
+  opacity: 0; /* Desvanecimiento */
+}
+
+.custom-btn {
+  width: auto; /* Ajusta el ancho si es necesario */
+  padding: 10px;
+  background-color: #3D7195;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px; /* Ajusta este margen si es necesario */
+  text-align: center; /* Centra el texto del botón */
+}
